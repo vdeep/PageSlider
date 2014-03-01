@@ -51,7 +51,10 @@ function route(event) {
 //        slider.slide($(homePage), "left");
     }
 
-    slider.slidePage($(page));
+    console.log("Calling slide");
+    slider.slidePage($(page), function(direction) {
+        console.log("animation complete");
+    });
 
 }
 
